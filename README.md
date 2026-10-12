@@ -52,7 +52,7 @@ The instrument cluster runs at the same time: a navigation map with the **Now Pl
 
 CarCast supports CarPlay's newest feature: **video playback on the car screen** (iOS 27.2 and later). CarCast tells the iPhone it is a head unit that can play video. The phone then hands the video to the car, and CarCast plays it on the CarPlay screen with its own player.
 
-> **Why this matters with iOS 27.2.** iOS 27.2 breaks **direct rendering**, where apps drew video onto the CarPlay screen themselves. On iOS 27.2 the only way to get video into the car is a head unit that supports CarPlay video playback. **CarCast does, and it works on iOS 27.2.** Our test iPhone 12 runs iOS 27.2, and the screenshots below show it.
+> **Why this matters with iOS 27.2.** iOS 27.2 breaks **direct rendering**, where apps drew video onto the CarPlay screen themselves. On iOS 27.2 the only way to get video into the car is a head unit that supports CarPlay video playback. **CarCast does, and it works on iOS 27.2.** We test it on an iPhone 12 running iOS 27.2, the same phone shown in the macOS and Windows screenshots below.
 
 - **Full session support:**
   - The video handoff, with play, pause and stop.

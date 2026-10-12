@@ -44,11 +44,15 @@ The demo shows CarCast on a Pixel Tablet, connected to an iPhone 13 over wireles
 
 The instrument cluster runs at the same time: a navigation map with the **Now Playing** card, which updates from iAP2 as tracks change.
 
+> **Running iOS 27.2?** That release breaks direct rendering of video on the CarPlay screen. CarCast's video playback support works with it; see [CarPlay video playback](#carplay-video-playback-video-in-the-car).
+
 ## Highlights
 
 ### CarPlay video playback (video in the car)
 
 CarCast supports CarPlay's newest feature: **video playback on the car screen** (iOS 27.2 and later). CarCast tells the iPhone it is a head unit that can play video. The phone then hands the video to the car, and CarCast plays it on the CarPlay screen with its own player.
+
+> **Why this matters with iOS 27.2.** iOS 27.2 breaks **direct rendering**, where apps drew video onto the CarPlay screen themselves. On iOS 27.2 the only way to get video into the car is a head unit that supports CarPlay video playback. **CarCast does, and it works on iOS 27.2.** Our test iPhone 12 runs iOS 27.2, and the screenshots below show it.
 
 - **Full session support:**
   - The video handoff, with play, pause and stop.
@@ -77,7 +81,7 @@ CarCast subscribes to the iPhone's **Now Playing updates over iAP2**, as a car w
 
 ![CarPlay on macOS with CarCast](screenshots/macos-carplay-home.png)
 
-*CarPlay from an iPhone 12 in a CarCast window on macOS. rPlayFling and rPlayTV are third-party CarPlay apps shown alongside the built-in ones; the side bar has the Home, Back and knob controls, plus screenshot and recording buttons.*
+*CarPlay from an iPhone 12 on **iOS 27.2** in a CarCast window on macOS. rPlayFling and rPlayTV are third-party CarPlay apps shown alongside the built-in ones; the side bar has the Home, Back and knob controls, plus screenshot and recording buttons.*
 
 - **Wired CarPlay over USB.** Connect an iPhone with a cable and CarPlay starts in a window.
 - **Configurable vehicle.**
@@ -120,7 +124,7 @@ Requirements: a Mac with Apple silicon or Intel, an iPhone with CarPlay enabled,
 
 ![CarPlay on Windows 11 with CarCast](screenshots/windows-desktop-carplay.png)
 
-*CarPlay from an iPhone 12 running live on Windows 11 with CarCast. The dedicated CarPlay screen features a top-aligned companion toolbar with Home, Back, knob rotary controls, and screenshot/recording actions.*
+*CarPlay from an iPhone 12 on **iOS 27.2**, running live on Windows 11 with CarCast. The dedicated CarPlay screen features a top-aligned companion toolbar with Home, Back, knob rotary controls, and screenshot/recording actions.*
 
 ### The app
 

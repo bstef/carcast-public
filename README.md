@@ -1,6 +1,6 @@
 # CarCast
 
-CarCast turns a Windows PC, a Mac, an Android tablet or an Android head unit into a CarPlay head unit. Connect an iPhone and CarPlay runs on the car's screen, on your desktop or on a tablet.
+CarCast turns a Windows PC, a Mac, an iPad, an iPhone, an Android tablet or an Android head unit into a CarPlay head unit. Connect an iPhone and CarPlay runs on the car's screen, on your desktop or on a tablet.
 
 CarCast is built on an existing code base that has **shipped in millions of wireless CarPlay boxes and dongles**. On that foundation it is a **state-of-the-art CarPlay receiver** that already supports CarPlay's newest features: video playback in the car, multiple displays with an instrument cluster, and iAP2 Now Playing. Its roots are in **real head units**, so it's meant for real cars, not only developer desks.
 
@@ -20,6 +20,7 @@ This repository is for **releases, documentation and issues**. The source code i
 | **macOS** | Available | CarPlay receiver and Protocol Inspector |
 | **Windows** | Available | CarPlay receiver and Protocol Inspector |
 | **Android** (tablets and Android head units) | Available | CarPlay, plus AirPlay, DLNA and USB mirroring |
+| **iOS and iPadOS** | Available (sideload) | iPad: CarPlay receiver. iPhone: CarPlay receiver, CarPlay on the same iPhone, and Connect to another CarCast screen |
 | **Embedded Linux** (e.g. Allwinner V851S) | OEM firmware license | CarPlay receiver firmware for CarPlay boxes and adapters |
 
 - **Desktop (macOS and Windows).** These versions focus on CarPlay and do not include AirPlay. AirPlay receiving and iPhone mirroring on the desktop come from our [rPlay](https://github.com/rPlayAI/rplay-linux) and [rPlayHub](https://github.com/rPlayAI/rPlayHub) projects.
@@ -193,10 +194,34 @@ Each mode has its own tab: **CarPlay**, **Mirroring**, **AirPlay** and **DLNA**.
 
 Requirements: an Android tablet or phone running Android 8.0 or later, and an iPhone with CarPlay enabled.
 
+## iOS and iPadOS
+
+CarCast runs on an iPad or an iPhone as a wireless CarPlay screen.
+
+| Device | What it does |
+|---|---|
+| **iPad** | **CarPlay receiver.** The iPad becomes the car's screen for an iPhone on the same Wi-Fi or on the iPhone's Personal Hotspot. |
+| **iPhone** | **CarPlay receiver**, like the iPad. |
+| | **This iPhone:** CarPlay on the same iPhone, full screen, with no second device. |
+| | **Connect:** finds the CarCast screens on this Wi-Fi (for example an iPad running CarCast) and starts CarPlay from this iPhone on the one you pick. |
+
+- **Settings:** car name and logo, screen size, video playback, instrument cluster (size, content, ETA), and the Wi-Fi CarPlay should use.
+- **Back to CarPlay.** Tapping the car logo in CarPlay shows CarCast's own screen; one tap returns to CarPlay.
+- **Each device is its own car.** It's named `CarCast-XXXX` and keeps that identity across reinstalls, so the iPhone asks to allow it once.
+
+Requirements: iOS or iPadOS 15 or later (tested down to iPadOS 16 on an iPad Pro 9.7"), Wi-Fi or Personal Hotspot, and an iPhone with CarPlay enabled.
+
+### Installing
+
+CarCast for iOS is not on the App Store. The release has an **unsigned IPA** (`CarCast-iOS-1.0.ipa`): sign and install it with your own Apple ID using a sideloading tool such as [Sideloadly](https://sideloadly.io) or [AltStore](https://altstore.io). With a free Apple ID the app must be re-signed every 7 days.
+
+On first launch, allow **Local Network**, **Bluetooth** and **Location** (iOS only shows apps the Wi-Fi network name when location is allowed).
+
 ## Who it's for
 
 - **CarPlay box makers.** License CarCast as the CarPlay receiver inside your box or adapter.
 - **Android head-unit makers and installers.** Add CarPlay, AirPlay, DLNA and mirroring to an Android head unit in one app.
+- **Drivers with an iPad.** Mount it as a CarPlay screen in a car that has none.
 - **Drivers with an Android head unit.** Get CarPlay, including video while parked, an instrument cluster and Now Playing.
 - **CarPlay app developers.** Test audio, navigation, communication and video apps on a real iPhone without a car.
 - **QA teams.** Reproduce car-only bugs on a desk and capture logs to attach to a ticket.
@@ -220,19 +245,11 @@ For OEM licensing, [open an issue](https://github.com/rPlayAI/carcast-public/iss
 
 ## Status
 
-<<<<<<< HEAD
-CarCast is in active development on macOS and Android; a Windows version is coming. Downloads will be posted under [Releases](https://github.com/rPlayAI/carcast-public/releases).
+CarCast is in active development on Windows, macOS, iOS/iPadOS and Android. Downloads are posted under [Releases](https://github.com/rPlayAI/carcast-public/releases).
 
 ## Reporting a problem
 
-Please [open an issue](https://github.com/rPlayAI/carcast-public/issues/new/choose) with your platform (macOS, Android or Windows),
-=======
-CarCast is in active development on Windows, macOS and Android. Downloads will be posted under [Releases](https://github.com/rPlayAI/carcast-public/releases).
-
-## Reporting a problem
-
-Please [open an issue](https://github.com/rPlayAI/carcast-public/issues/new/choose) with your platform (Windows, macOS or Android),
->>>>>>> 7921dc9 (Windows 11: screenshots of desktop, CarPlay session, and app controls)
+Please [open an issue](https://github.com/rPlayAI/carcast-public/issues/new/choose) with your platform (Windows, macOS, iOS/iPadOS or Android),
 the CarCast version, your iPhone model and iOS version, and a screenshot if you can. On Android, *Settings › Share logs*
 saves the log from a failed connect.
 

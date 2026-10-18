@@ -1,5 +1,15 @@
 # Release notes
 
+## iOS and iPadOS 1.0 — October 2026
+
+First release for iPhone and iPad (iOS/iPadOS 15 or later), as an unsigned IPA for sideloading.
+
+- **iPad and iPhone as a wireless CarPlay screen**, over Wi-Fi or the iPhone's Personal Hotspot.
+- **This iPhone** (iPhone): CarPlay on the same iPhone.
+- **Connect** (iPhone): starts CarPlay from this iPhone on another CarCast screen on the same Wi-Fi.
+- Car name and logo, screen size, video playback and instrument cluster settings.
+- **Back to CarPlay** from CarCast's own screen after tapping the car logo.
+
 ## Android 0.3.4 — October 2026
 
 - **Return to Car**: the car icon in CarPlay opens the native screen, and *CarPlay* or the phone tile goes back.

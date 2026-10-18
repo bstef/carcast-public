@@ -196,7 +196,7 @@ Requirements: an Android tablet or phone running Android 8.0 or later, and an iP
 
 ## iOS and iPadOS
 
-CarCast runs on an iPad or an iPhone as a wireless CarPlay screen.
+CarCast runs on an iPad or an iPhone as a wireless CarPlay screen (**iCarCast** on TestFlight). See the **[iCarCast user guide](docs/icarcast-user-guide.md)**.
 
 | Home | This iPhone |
 |---|---|

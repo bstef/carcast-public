@@ -2,7 +2,7 @@
 
 ## iOS and iPadOS 1.0 — October 2026
 
-First release for iPhone and iPad (iOS/iPadOS 15 or later), as an unsigned IPA for sideloading.
+First release for iPhone and iPad (iOS/iPadOS 15 or later), as an IPA for sideloading.
 
 - **iPad and iPhone as a wireless CarPlay screen**, over Wi-Fi or the iPhone's Personal Hotspot.
 - **This iPhone** (iPhone): CarPlay on the same iPhone.

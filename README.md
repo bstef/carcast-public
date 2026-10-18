@@ -211,7 +211,18 @@ CarCast runs on an iPad or an iPhone as a wireless CarPlay screen.
 | | **This iPhone:** CarPlay on the same iPhone, full screen, with no second device. |
 | | **Connect:** finds the CarCast screens on this Wi-Fi (for example an iPad running CarCast) and starts CarPlay from this iPhone on the one you pick. |
 
-- **Settings:** car name and logo, screen size, video playback, instrument cluster (size, content, ETA), and the Wi-Fi CarPlay should use.
+### Settings
+
+| Car | Display | Instrument cluster |
+|---|---|---|
+| ![Car settings](screenshots/iphone-settings-car.png) | ![Display settings](screenshots/iphone-settings-display.png) | ![Instrument cluster settings](screenshots/iphone-settings-cluster.png) |
+
+- **Car:** the name the iPhone shows for this car, and its logo on the CarPlay home screen.
+- **Display:** resolution (or *Fit this screen*), video playback while parked, and *Show touches* for screen recordings.
+- **Instrument cluster:** a second CarPlay screen for maps and turn-by-turn directions, with its content, ETA and size.
+
+### Features
+
 - **Back to CarPlay.** Tapping the car logo in CarPlay shows CarCast's own screen; one tap returns to CarPlay.
 - **Each device is its own car.** It's named `CarCast-XXXX` and keeps that identity across reinstalls, so the iPhone asks to allow it once.
 
@@ -219,7 +230,7 @@ Requirements: iOS or iPadOS 15 or later (tested down to iPadOS 16 on an iPad Pro
 
 ### Installing
 
-CarCast for iOS is not on the App Store. The release has an **unsigned IPA** (`CarCast-iOS-1.0.ipa`): sign and install it with your own Apple ID using a sideloading tool such as [Sideloadly](https://sideloadly.io) or [AltStore](https://altstore.io). With a free Apple ID the app must be re-signed every 7 days.
+CarCast for iOS is not on the App Store. Download the `.ipa` from [Releases](https://github.com/rPlayAI/carcast-public/releases) and sideload it with AltStore, SideStore or Sideloadly, which sign it with your own Apple ID. With a free Apple ID the app must be re-signed every 7 days.
 
 On first launch, allow **Local Network**, **Bluetooth** and **Location** (iOS only shows apps the Wi-Fi network name when location is allowed).
 

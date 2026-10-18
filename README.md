@@ -228,6 +228,12 @@ CarCast runs on an iPad or an iPhone as a wireless CarPlay screen.
 
 Requirements: iOS or iPadOS 15 or later (tested down to iPadOS 16 on an iPad Pro 9.7"), Wi-Fi or Personal Hotspot, and an iPhone with CarPlay enabled.
 
+### Wi-Fi and networks
+
+Which network setup works depends on where you are: at home, both devices on the same Wi-Fi; in the car, the iPhone's
+**Personal Hotspot**, with Wi-Fi switched on. Read the **[Wi-Fi and network guide](docs/ios-network-guide.md)** before
+the first drive; it covers This iPhone, an iPad as the screen, Connect, and what to do when CarPlay doesn't start.
+
 ### Installing
 
 CarCast for iOS is not on the App Store. Download the `.ipa` from [Releases](https://github.com/rPlayAI/carcast-public/releases) and sideload it with AltStore, SideStore or Sideloadly, which sign it with your own Apple ID. With a free Apple ID the app must be re-signed every 7 days.

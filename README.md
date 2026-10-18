@@ -198,6 +198,12 @@ Requirements: an Android tablet or phone running Android 8.0 or later, and an iP
 
 CarCast runs on an iPad or an iPhone as a wireless CarPlay screen.
 
+| Home | This iPhone |
+|---|---|
+| ![CarCast home screen on iPhone](screenshots/iphone-home.png) | ![CarPlay on the same iPhone](screenshots/iphone-this-iphone-carplay.png) |
+
+*Left: CarCast on an iPhone 12, waiting for a phone, with **Settings**, **Connect** and **This iPhone**. Right: **This iPhone**, CarPlay running full screen on the same iPhone, with the car's LEXUS icon.*
+
 | Device | What it does |
 |---|---|
 | **iPad** | **CarPlay receiver.** The iPad becomes the car's screen for an iPhone on the same Wi-Fi or on the iPhone's Personal Hotspot. |

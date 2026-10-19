@@ -22,7 +22,9 @@ Tap **This iPhone** on the CarCast home screen. CarPlay fills the screen; sound 
 
 | iPhone's network | Result |
 |---|---|
-| Joined to a Wi-Fi network | ✅ Works |
+| Joined to a Wi-Fi network with a password (home, office) | ✅ Works. Asks for the network's password the first time |
+| Joined to a Wi-Fi network without a password | ⚠️ Not confirmed yet. If it doesn't start, use Personal Hotspot |
+| Joined to an Enhanced Open café network, or one that asks for a username | ❌ CarCast refuses (*CarPlay can't start on "…"*) rather than change it. Disconnect from it in Control Center and use Personal Hotspot |
 | Personal Hotspot on (needs mobile data), Wi-Fi on | ✅ Works, including on the open road. **Use this in the car.** |
 | Wi-Fi on but not joined, hotspot off | ⚠️ Only near a Wi-Fi network the iPhone already knows; the iPhone may join it on its own. On the open road it won't start: turn on Personal Hotspot. |
 | Wi-Fi off | ❌ Doesn't start |
@@ -31,8 +33,11 @@ Tap **This iPhone** on the CarCast home screen. CarPlay fills the screen; sound 
   it.
 - **If no CarPlay screen appears within about 10 seconds,** CarCast tries again once by itself. If it still says
   *CarPlay didn't start*, tap **This iPhone** again.
-- **Typing a Wi-Fi name.** If CarCast can't read the network name (location not allowed), it asks for it. Type it
-  exactly: a misspelt name makes the iPhone go looking for that network and leave the one it is on.
+- **Why it asks for the Wi-Fi password.** iOS saves the network This iPhone runs on as the car's Wi-Fi, with the
+  password CarCast gives it. A wrong password would replace your real one, so CarCast asks for the real password once
+  and keeps it on this iPhone (in the Keychain). Press and hold **This iPhone** to enter it again.
+- **Location must be allowed.** Without it, iOS doesn't tell CarCast which network it's on, and CarCast won't start
+  on an unknown network: Settings › CarCast › Location.
 - **Keep CarCast in front.** Switching to another app can end the session; tap **This iPhone** to start again.
 
 ## An iPad as the CarPlay screen
@@ -63,6 +68,19 @@ If it says **No CarCast screen found on this Wi-Fi**, the two devices can't see 
 - The iPhone asks **Allow CarPlay While Locked?** for each new car. While CarCast shows CarPlay, that card can't be
   tapped on the same screen; answer it in Settings › General › CarPlay › the car (`CarCast-XXXX`).
 - Each iPad or iPhone running CarCast is its own car, and keeps its identity across reinstalls, so you're asked once.
+
+## If a Wi-Fi network stopped working
+
+Early test versions (TestFlight builds 1 to 4) could change a saved network when This iPhone was used on it, mostly
+café and store Wi-Fi: the iPhone then can't join it, asks for a password it doesn't have, and **Forget This Network**
+doesn't help. To fix it:
+
+1. **Settings › General › CarPlay ›** `CarCast-XXXX` **› Forget This Car.**
+2. **Settings › Wi-Fi ›** ⓘ next to the network **› Forget This Network.**
+3. Join the network again.
+
+If it still won't join, turn Wi-Fi off and on and restart the iPhone. Build 6 and later check the network first and
+never change it.
 
 ## When nothing works
 

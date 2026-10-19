@@ -61,6 +61,15 @@ Tap **Stop** to end it.
 At home, be on Wi-Fi. In the car, turn on **Personal Hotspot** and keep Wi-Fi on. If CarPlay doesn't appear within
 about 10 seconds, CarCast tries once more by itself; if it still doesn't start, tap **This iPhone** again.
 
+**The Wi-Fi password.** iOS saves the network This iPhone runs on as the car's Wi-Fi, together with the password
+CarCast gives it, so on a network with a password CarCast asks for the real one the first time. It's kept on this
+iPhone only (in the Keychain) and not asked again; press and hold **This iPhone** to enter it again if it changes.
+
+**Café and public Wi-Fi.** Some networks can't be described to CarPlay without changing how the iPhone joins them
+(newer "Enhanced Open" café networks, and company or school networks that ask for a username). On those, CarCast
+doesn't start and says *CarPlay can't start on "…"*. Disconnect from that network in Control Center, turn on
+**Personal Hotspot**, then tap **This iPhone**.
+
 ## The car icon and Back to CarPlay
 
 The CarPlay home screen has an icon for the car itself (LEXUS until you choose your own logo). Tap it to leave CarPlay
@@ -116,8 +125,25 @@ iPad on car power) or **Bluetooth** (your car) › action **Open App › CarCast
 |---|---|
 | **No CarCast screen found on this Wi-Fi** | Both devices on the same network; Local Network allowed for CarCast on both; avoid public or hotel Wi-Fi (use the iPhone's hotspot). |
 | **CarPlay didn't start** | Check Wi-Fi is on (and Personal Hotspot in the car), then tap the button again. |
+| **CarPlay can't start on "…"** | That network can't be used for This iPhone. Disconnect from it in Control Center, turn on Personal Hotspot, tap This iPhone. |
+| **The iPhone can't join a Wi-Fi network any more** after using This iPhone ("Unable to join", or a password is asked on a network that has none) | See [If a Wi-Fi network stopped working](#if-a-wi-fi-network-stopped-working) below. |
 | CarPlay worked before, now never starts | Restart the iPhone. |
 | A setting didn't change anything | Quit CarCast, open it again and reconnect. |
+
+### If a Wi-Fi network stopped working
+
+Early test versions of iCarCast (TestFlight builds 1 to 4) could change a saved Wi-Fi network when you used
+**This iPhone** on it, typically a café or store network: afterwards the iPhone says it's unable to join, asks for a
+password that network doesn't have, and **Forget This Network** doesn't help. The network is fine; the iPhone's saved
+copy of it was changed. To fix it:
+
+1. On the iPhone: **Settings › General › CarPlay ›** `CarCast-XXXX` **› Forget This Car.** While the car is
+   remembered, the iPhone keeps the network as the car's Wi-Fi.
+2. **Settings › Wi-Fi ›** ⓘ next to the network **› Forget This Network.**
+3. Join the network again as usual.
+
+If it still won't join, turn Wi-Fi off and on, then restart the iPhone. Then update iCarCast in TestFlight: build 6
+and later never change a network (see **The Wi-Fi password** and **Café and public Wi-Fi** above).
 
 Still stuck? [Report a problem](https://github.com/rPlayAI/carcast-public/issues/new/choose) with both devices' models
 and iOS versions, and what you tried.

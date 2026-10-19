@@ -1,7 +1,8 @@
 # iCarCast user guide
 
 iCarCast is CarCast for iPhone and iPad. It turns an iPad or an iPhone into a CarPlay screen, and it can run CarPlay
-on the iPhone itself. On the home screen the app is called **CarCast**.
+on the iPhone itself. It can also show **Android Auto** from an Android phone (experimental, see
+[Android Auto](#android-auto)). On the home screen the app is called **CarCast**.
 
 ![CarCast home screen on iPhone](../screenshots/iphone-home.png)
 
@@ -13,6 +14,7 @@ on the iPhone itself. On the home screen the app is called **CarCast**.
 | **iPhone** | The same, as a screen for another iPhone. |
 | | **This iPhone:** CarPlay on the same iPhone, full screen. |
 | | **Connect:** send CarPlay from this iPhone to an iPad (or another iPhone) running CarCast. |
+| **Either** | **Android Auto** (experimental, off by default): the screen for an Android phone. |
 
 You need iOS or iPadOS 15 or later, and an iPhone with CarPlay enabled (Settings › General › CarPlay).
 
@@ -108,6 +110,22 @@ touch input, as in a car.
 Most changes are read by the iPhone when it connects, so CarCast offers **Quit CarCast** after a change: open it again
 and reconnect for the change to take effect.
 
+## Android Auto
+
+The iPad (or iPhone) can be the screen for an Android phone too. It's experimental and off by default.
+
+1. On the iPad: CarCast › **Settings › Modes** › turn on **Android Auto**. An **Android Auto** button appears on the
+   home screen. (Turn **CarPlay** off there if you only want Android Auto; one of the two always stays on.)
+2. On the Android phone, once: open **Android Auto › Settings**, tap the **version** 10 times to unlock developer
+   settings, then **⋮ › Start head unit server**. Do this again after the phone restarts.
+3. Put both on the same network: the same Wi-Fi at home, or in the car the iPad on the **Android phone's hotspot**.
+4. On the iPad, tap **Android Auto**. Enter the phone's IP address (on the phone's hotspot CarCast fills it in) and
+   the port, **5277** unless you changed it, then **Connect**.
+
+Android Auto appears on the iPad, landscape, with touch and sound. Tap **Android Auto** again to stop. If it says
+*Waiting for the Android phone*, check the head unit server is running and the address is the phone's (Settings ›
+About phone › Status, or the hotspot's gateway).
+
 ## Wi-Fi and networks
 
 Where you are decides what to switch on: at home, the same Wi-Fi for both devices; in the car, the iPhone's Personal
@@ -129,6 +147,8 @@ iPad on car power) or **Bluetooth** (your car) › action **Open App › CarCast
 | **The iPhone can't join a Wi-Fi network any more** after using This iPhone ("Unable to join", or a password is asked on a network that has none) | See [If a Wi-Fi network stopped working](#if-a-wi-fi-network-stopped-working) below. |
 | CarPlay worked before, now never starts | Restart the iPhone. |
 | A setting didn't change anything | Quit CarCast, open it again and reconnect. |
+| No **Android Auto** button | Turn it on in Settings › Modes. |
+| **Android Auto** waits and never starts | Start the head unit server on the phone again (step 2 of [Android Auto](#android-auto)), check the phone's IP address and port 5277, and that both are on the same network. |
 
 ### If a Wi-Fi network stopped working
 

@@ -1,5 +1,9 @@
 # CarCast
 
+**iPhone and iPad (iCarCast, TestFlight beta):** [User guide](docs/icarcast-user-guide.md) ·
+[Wi-Fi and network guide](docs/ios-network-guide.md) · [Android Auto on iPad](docs/icarcast-user-guide.md#android-auto) ·
+[If a Wi-Fi network stopped working](docs/icarcast-user-guide.md#if-a-wi-fi-network-stopped-working)
+
 CarCast turns a Windows PC, a Mac, an iPad, an iPhone, an Android tablet or an Android head unit into a CarPlay head unit. Connect an iPhone and CarPlay runs on the car's screen, on your desktop or on a tablet.
 
 CarCast is built on an existing code base that has **shipped in millions of wireless CarPlay boxes and dongles**. On that foundation it is a **state-of-the-art CarPlay receiver** that already supports CarPlay's newest features: video playback in the car, multiple displays with an instrument cluster, and iAP2 Now Playing. Its roots are in **real head units**, so it's meant for real cars, not only developer desks.
@@ -20,7 +24,7 @@ This repository is for **releases, documentation and issues**. The source code i
 | **macOS** | Available | CarPlay receiver and Protocol Inspector |
 | **Windows** | Available | CarPlay receiver and Protocol Inspector |
 | **Android** (tablets and Android head units) | Available | CarPlay, plus AirPlay, DLNA and USB mirroring |
-| **iOS and iPadOS** | Available (sideload) | iPad: CarPlay receiver. iPhone: CarPlay receiver, CarPlay on the same iPhone, and Connect to another CarCast screen |
+| **iOS and iPadOS** | TestFlight beta (or sideload) | iPad: CarPlay receiver, and Android Auto (experimental). iPhone: the same, plus CarPlay on the same iPhone and Connect to another CarCast screen |
 | **Embedded Linux** (e.g. Allwinner V851S) | OEM firmware license | CarPlay receiver firmware for CarPlay boxes and adapters |
 
 - **Desktop (macOS and Windows).** These versions focus on CarPlay and do not include AirPlay. AirPlay receiving and iPhone mirroring on the desktop come from our [rPlay](https://github.com/rPlayAI/rplay-linux) and [rPlayHub](https://github.com/rPlayAI/rPlayHub) projects.
@@ -210,6 +214,7 @@ CarCast runs on an iPad or an iPhone as a wireless CarPlay screen (**iCarCast** 
 | **iPhone** | **CarPlay receiver**, like the iPad. |
 | | **This iPhone:** CarPlay on the same iPhone, full screen, with no second device. |
 | | **Connect:** finds the CarCast screens on this Wi-Fi (for example an iPad running CarCast) and starts CarPlay from this iPhone on the one you pick. |
+| **iPad or iPhone** | **Android Auto (experimental):** the same screen shows Android Auto from an Android phone. Off by default: Settings › Modes. |
 
 ### Settings
 
@@ -224,6 +229,7 @@ CarCast runs on an iPad or an iPhone as a wireless CarPlay screen (**iCarCast** 
 ### Features
 
 - **Back to CarPlay.** Tapping the car logo in CarPlay shows CarCast's own screen; one tap returns to CarPlay.
+- **Android Auto.** Turn it on in Settings › Modes and an **Android Auto** button appears. Start Android Auto's head unit server on the Android phone, put both on the same Wi-Fi (or the iPad on the phone's hotspot) and tap the button: Android Auto runs on the iPad with touch and sound, no USB or Bluetooth. CarPlay and Android Auto can both stay on, or either one alone. See [Android Auto](docs/icarcast-user-guide.md#android-auto).
 - **Each device is its own car.** It's named `CarCast-XXXX` and keeps that identity across reinstalls, so the iPhone asks to allow it once.
 
 Requirements: iOS or iPadOS 15 or later (tested down to iPadOS 16 on an iPad Pro 9.7"), Wi-Fi or Personal Hotspot, and an iPhone with CarPlay enabled.
@@ -236,7 +242,8 @@ the first drive; it covers This iPhone, an iPad as the screen, Connect, and what
 
 ### Installing
 
-CarCast for iOS is not on the App Store. Download the `.ipa` from [Releases](https://github.com/rPlayAI/carcast-public/releases) and sideload it with AltStore, SideStore or Sideloadly, which sign it with your own Apple ID. With a free Apple ID the app must be re-signed every 7 days.
+- **TestFlight (recommended):** iCarCast is in public beta on TestFlight; open the invitation link on the iPhone or iPad and install it from the TestFlight app.
+- **Sideload:** download the `.ipa` from [Releases](https://github.com/rPlayAI/carcast-public/releases) when one is posted and sideload it with AltStore, SideStore or Sideloadly, which sign it with your own Apple ID. With a free Apple ID the app must be re-signed every 7 days.
 
 On first launch, allow **Local Network**, **Bluetooth** and **Location** (iOS only shows apps the Wi-Fi network name when location is allowed).
 

@@ -1,6 +1,6 @@
 # CarCast
 
-**iPhone and iPad (iCarCast, TestFlight beta):** [User guide](docs/icarcast-user-guide.md) ·
+**iPhone and iPad (iCarCast):** [Join the TestFlight beta](https://testflight.apple.com/join/mgpX2urq) · [User guide](docs/icarcast-user-guide.md) ·
 [Wi-Fi and network guide](docs/ios-network-guide.md) · [Android Auto on iPad](docs/icarcast-user-guide.md#android-auto) ·
 [If a Wi-Fi network stopped working](docs/icarcast-user-guide.md#if-a-wi-fi-network-stopped-working)
 
@@ -242,7 +242,7 @@ the first drive; it covers This iPhone, an iPad as the screen, Connect, and what
 
 ### Installing
 
-- **TestFlight (recommended):** iCarCast is in public beta on TestFlight; open the invitation link on the iPhone or iPad and install it from the TestFlight app.
+- **TestFlight (recommended):** iCarCast is in public beta on TestFlight: open [https://testflight.apple.com/join/mgpX2urq](https://testflight.apple.com/join/mgpX2urq) on the iPhone or iPad and install it from the TestFlight app.
 - **Sideload:** download the `.ipa` from [Releases](https://github.com/rPlayAI/carcast-public/releases) when one is posted and sideload it with AltStore, SideStore or Sideloadly, which sign it with your own Apple ID. With a free Apple ID the app must be re-signed every 7 days.
 
 On first launch, allow **Local Network**, **Bluetooth** and **Location** (iOS only shows apps the Wi-Fi network name when location is allowed).

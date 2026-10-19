@@ -20,8 +20,8 @@ You need iOS or iPadOS 15 or later, and an iPhone with CarPlay enabled (Settings
 
 ## Installing
 
-- **TestFlight:** if you were invited, open the invitation on the iPhone or iPad and install **iCarCast** from the
-  TestFlight app.
+- **TestFlight:** open [https://testflight.apple.com/join/mgpX2urq](https://testflight.apple.com/join/mgpX2urq) on the iPhone or iPad and install **iCarCast** from the TestFlight
+  app.
 - **Sideloading:** download the `.ipa` from [Releases](https://github.com/rPlayAI/carcast-public/releases) when one is
   posted, and install it with AltStore, SideStore or Sideloadly.
 

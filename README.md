@@ -202,11 +202,11 @@ Requirements: an Android tablet or phone running Android 8.0 or later, and an iP
 
 CarCast runs on an iPad or an iPhone as a wireless CarPlay screen (**iCarCast** on TestFlight). See the **[iCarCast user guide](docs/icarcast-user-guide.md)**.
 
-| Home | This iPhone |
-|---|---|
-| ![CarCast home screen on iPhone](screenshots/iphone-home.png) | ![CarPlay on the same iPhone](screenshots/iphone-this-iphone-carplay.png) |
+| Home | This iPhone | Portrait |
+|---|---|---|
+| ![CarCast home screen on iPhone](screenshots/iphone-home.png) | ![CarPlay on the same iPhone](screenshots/iphone-this-iphone-carplay.png) | ![CarPlay upright on an iPhone 18 Pro](screenshots/iphone-portrait-carplay.png) |
 
-*Left: CarCast on an iPhone 12, waiting for a phone, with **Settings**, **Connect** and **This iPhone**. Right: **This iPhone**, CarPlay running full screen on the same iPhone, with the car's LEXUS icon.*
+*Left: CarCast on an iPhone 12, waiting for a phone, with **Settings**, **Connect** and **This iPhone**. Middle: **This iPhone**, CarPlay running full screen on the same iPhone, with the car's LEXUS icon. Right: **Portrait**, CarPlay upright on an iPhone 18 Pro, filling the screen like a tall car display, clear of the Dynamic Island.*
 
 | Device | What it does |
 |---|---|
@@ -223,7 +223,7 @@ CarCast runs on an iPad or an iPhone as a wireless CarPlay screen (**iCarCast** 
 | ![Car settings](screenshots/iphone-settings-car.png) | ![Display settings](screenshots/iphone-settings-display.png) | ![Instrument cluster settings](screenshots/iphone-settings-cluster.png) |
 
 - **Car:** the name the iPhone shows for this car, and its logo on the CarPlay home screen.
-- **Display:** resolution (or *Fit this screen*), video playback while parked, and *Show touches* for screen recordings.
+- **Display:** resolution (or *Fit this screen*), video playback while parked, *Show touches* for screen recordings, *Portrait* (CarPlay upright, like a tall car screen) and *Avoid notch*.
 - **Instrument cluster:** a second CarPlay screen for maps and turn-by-turn directions, with its content, ETA and size.
 
 ### Features

@@ -67,6 +67,12 @@ about 10 seconds, CarCast tries once more by itself; if it still doesn't start, 
 CarCast gives it, so on a network with a password CarCast asks for the real one the first time. It's kept on this
 iPhone only (in the Keychain) and not asked again; press and hold **This iPhone** to enter it again if it changes.
 
+**Portrait.** Turn on Settings › Display › **Portrait** and CarPlay runs upright, filling the iPhone's screen like a
+tall car display (a Tesla's or a Volvo's). **Avoid notch** keeps it clear of the notch or Dynamic Island. Both apply
+the next time CarCast starts. Android Auto stays landscape.
+
+![CarPlay upright on an iPhone 18 Pro](../screenshots/iphone-portrait-carplay.png)
+
 **Café and public Wi-Fi.** Some networks can't be described to CarPlay without changing how the iPhone joins them
 (newer "Enhanced Open" café networks, and company or school networks that ask for a username). On those, CarCast
 doesn't start and says *CarPlay can't start on "…"*. Disconnect from that network in Control Center, turn on
@@ -95,6 +101,8 @@ change the car.
   or *Full HD (1920 × 1080)*.
 - **Video playback**: lets apps that support it show video on the CarPlay screen while parked.
 - **Show touches**: marks each tap, for screen recordings. Takes effect at once.
+- **Portrait**: CarPlay upright, like a tall car screen, on the iPhone (This iPhone) or an iPad held upright.
+- **Avoid notch**: keeps CarPlay clear of the notch or Dynamic Island (on by default).
 
 **Instrument cluster**
 

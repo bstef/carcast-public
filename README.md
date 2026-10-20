@@ -222,14 +222,15 @@ CarCast runs on an iPad or an iPhone as a wireless CarPlay screen (**iCarCast** 
 |---|---|---|
 | ![Car settings](screenshots/iphone-settings-car.png) | ![Display settings](screenshots/iphone-settings-display.png) | ![Instrument cluster settings](screenshots/iphone-settings-cluster.png) |
 
-- **Car:** the name the iPhone shows for this car, and its logo on the CarPlay home screen.
-- **Display:** resolution (or *Fit this screen*), video playback while parked, *Show touches* for screen recordings, *Portrait* (CarPlay upright, like a tall car screen) and *Avoid notch*.
+- **Car:** the name the iPhone shows for this car, its logo on the CarPlay home screen (100+ car brands, a bicycle, a motorcycle, or your own image) with its label, and the driving position.
+- **Wi-Fi for CarPlay:** the network This iPhone and Connect give CarPlay, with the password hidden behind a show toggle, *Use current Wi-Fi* and *Forget this network*.
+- **Display:** resolution (or *Fit this screen*), video playback while parked, *Show touches* for screen recordings, *Portrait* (CarPlay upright, like a tall car screen), *Avoid notch*, *Night mode* and *Play sound here* (off: the iPhone keeps CarPlay's sound, for the car's Bluetooth audio).
 - **Instrument cluster:** a second CarPlay screen for maps and turn-by-turn directions, with its content, ETA and size.
 
 ### Features
 
 - **Back to CarPlay.** Tapping the car logo in CarPlay shows CarCast's own screen; one tap returns to CarPlay.
-- **Android Auto.** Turn it on in Settings › Modes and an **Android Auto** button appears. Start Android Auto's head unit server on the Android phone, put both on the same Wi-Fi (or the iPad on the phone's hotspot) and tap the button: Android Auto runs on the iPad with touch and sound, no USB or Bluetooth. CarPlay and Android Auto can both stay on, or either one alone. See [Android Auto](docs/icarcast-user-guide.md#android-auto).
+- **Android Auto.** Turn it on in Settings › Modes and an **Android Auto** button appears. Install the [CarCast Launcher](https://github.com/rPlayAI/carcast-public/releases/tag/android-launcher-2026-10-19) on the Android phone (it starts Android Auto's head unit server and announces the phone), put both on the same Wi-Fi (or the iPad on the phone's hotspot) and tap the button: CarCast finds the phone and Android Auto runs on the iPad with touch and sound, no USB or Bluetooth. CarPlay and Android Auto can both stay on, or either one alone. See [Android Auto](docs/icarcast-user-guide.md#android-auto).
 - **Each device is its own car.** It's named `CarCast-XXXX` and keeps that identity across reinstalls, so the iPhone asks to allow it once.
 
 Requirements: iOS or iPadOS 15 or later (tested down to iPadOS 16 on an iPad Pro 9.7"), Wi-Fi or Personal Hotspot, and an iPhone with CarPlay enabled.

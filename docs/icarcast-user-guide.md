@@ -35,7 +35,7 @@ On first launch, allow what CarCast asks for:
 
 The screen shows this device's car name (`CarCast-XXXX`) and what it is doing, with these buttons:
 
-- **Settings**: car name, logo, display and instrument cluster.
+- **Settings**: car name and logo, Wi-Fi, display, sound and instrument cluster.
 - **Connect** (iPhone): start CarPlay on another CarCast screen.
 - **This iPhone** (iPhone): CarPlay on this iPhone.
 - **Stop**: replaces Connect or This iPhone while CarPlay is starting or running, and ends it.
@@ -48,7 +48,8 @@ The screen shows this device's car name (`CarCast-XXXX`) and what it is doing, w
    from the iPad.
 3. On the iPhone, open CarCast and tap **Connect**, then pick the iPad by its name.
 
-CarPlay appears on the iPad and its sound plays from the iPad. Touch works as on a car screen.
+CarPlay appears on the iPad and its sound plays from the iPad (or stays on the iPhone, for the car's Bluetooth audio:
+turn off **Play sound here** in Settings). Touch works as on a car screen.
 
 The first time, the iPhone asks **Allow CarPlay While Locked?** That card can't be tapped while CarPlay is on screen;
 answer it on the iPhone in Settings › General › CarPlay › `CarCast-XXXX`. You're asked once per CarCast device.
@@ -80,7 +81,7 @@ doesn't start and says *CarPlay can't start on "…"*. Disconnect from that netw
 
 ## The car icon and Back to CarPlay
 
-The CarPlay home screen has an icon for the car itself (LEXUS until you choose your own logo). Tap it to leave CarPlay
+The CarPlay home screen has an icon for the car itself (LEXUS until you pick another logo in Settings). Tap it to leave CarPlay
 for CarCast's own screen, which says **CarPlay is connected**. Tap **Back to CarPlay** to return, or **Settings** to
 change the car.
 
@@ -93,7 +94,27 @@ change the car.
 **Car**
 
 - **Car name**: the name the iPhone shows for this car.
-- **Car logo**: the car's icon on the CarPlay home screen. Choose a square image; **Remove** goes back to the default.
+- **Car logo**: the car's icon on the CarPlay home screen. Pick one from the list (more than 100 car brands, a
+  bicycle, a motorcycle) or **Choose image** for your own square picture; **Remove image** goes back to the list.
+- **Logo label**: the name under the logo. Leave it empty for the default (the brand, or the car name for your own
+  image).
+- **Driving Position**: *Left-hand drive* or *Right-hand drive*; CarPlay puts its dock on the driver's side. From the
+  next connection.
+
+A new logo or label shows at the next CarPlay connection; there's no need to restart CarCast.
+
+**Wi-Fi for CarPlay** (iPhone)
+
+The Wi-Fi network **This iPhone** and **Connect** give CarPlay. It's filled in the first time you use This iPhone on
+Wi-Fi; here you can see and change it.
+
+- **Network name**, or **Use current Wi-Fi** to fill it in from the network the iPhone is on.
+- **Password**: hidden; tap the eye to show it. Leave it empty for an open network. **Save** checks it's 8 to 63
+  characters.
+- **Forget this network**: clears it; This iPhone asks for the password again next time.
+
+iOS saves this network in the iPhone's Wi-Fi settings with exactly this password, so it must be the network's real
+one. Away from it, turn on **Personal Hotspot** (keep Wi-Fi on) and This iPhone uses the network saved here.
 
 **Display**
 
@@ -102,7 +123,12 @@ change the car.
 - **Video playback**: lets apps that support it show video on the CarPlay screen while parked.
 - **Show touches**: marks each tap, for screen recordings. Takes effect at once.
 - **Portrait**: CarPlay upright, like a tall car screen, on the iPhone (This iPhone) or an iPad held upright.
-- **Avoid notch**: keeps CarPlay clear of the notch or Dynamic Island (on by default).
+- **Avoid notch**: keeps CarPlay clear of the notch or Dynamic Island (on by default). In Portrait the screen still
+  runs edge to edge, with CarPlay's buttons below the Dynamic Island.
+- **Night mode**: *Auto* (follows the device's dark mode), *On* or *Off*. Changes CarPlay at once.
+- **Play sound here**: on, CarPlay's sound plays from this device. Off, the iPhone keeps it, so it plays wherever the
+  iPhone sends sound (for example the car's Bluetooth audio). Applies when CarCast restarts; This iPhone always keeps
+  the sound on the iPhone.
 
 **Instrument cluster**
 
@@ -115,6 +141,9 @@ touch input, as in a car.
 
 **About** shows the version and this device's details, for problem reports.
 
+**Reset All Settings** puts every setting back to its default, including the car's name and logo. iPhones that
+already know this car keep it.
+
 Most changes are read by the iPhone when it connects, so CarCast offers **Quit CarCast** after a change: open it again
 and reconnect for the change to take effect.
 
@@ -125,10 +154,16 @@ The iPad (or iPhone) can be the screen for an Android phone too. It's experiment
 1. On the iPad: CarCast › **Settings › Modes** › turn on **Android Auto**. An **Android Auto** button appears on the
    home screen. (Turn **CarPlay** off there if you only want Android Auto; one of the two always stays on.)
 2. On the Android phone, once: open **Android Auto › Settings**, tap the **version** 10 times to unlock developer
-   settings, then **⋮ › Start head unit server**. Do this again after the phone restarts.
-3. Put both on the same network: the same Wi-Fi at home, or in the car the iPad on the **Android phone's hotspot**.
-4. On the iPad, tap **Android Auto**. Enter the phone's IP address (on the phone's hotspot CarCast fills it in) and
-   the port, **5277** unless you changed it, then **Connect**.
+   settings.
+3. On the Android phone, install **CarCast Launcher**
+   ([download the APK](https://github.com/rPlayAI/carcast-public/releases/tag/android-launcher-2026-10-19)) and open
+   it. It starts Android Auto's head unit server for you (**Start it for me** asks for an Accessibility permission,
+   used only to tap *Start head unit server* in Android Auto's settings) and announces the phone on the network.
+   Without the launcher: **⋮ › Start head unit server** in Android Auto's developer settings, again after each restart.
+4. Put both on the same network: the same Wi-Fi at home, or in the car the iPad on the **Android phone's hotspot**.
+5. On the iPad, tap **Android Auto**. With the launcher running, CarCast finds the phone by itself and connects (if
+   there are several, pick one). Otherwise enter the phone's IP address (on the phone's hotspot CarCast fills it in)
+   and the port, **5277** unless you changed it, then **Connect**.
 
 Android Auto appears on the iPad, landscape, with touch and sound. Tap **Android Auto** again to stop. If it says
 *Waiting for the Android phone*, check the head unit server is running and the address is the phone's (Settings ›

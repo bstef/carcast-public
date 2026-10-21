@@ -1,5 +1,14 @@
 # Release notes
 
+## Android 0.3.23 — October 2026
+
+[Download the APK](https://github.com/rPlayAI/carcast-public/releases/tag/android-0.3.23).
+
+- **CarPlay Ultra**: CarCast draws the iPhone's Ultra instrument cluster (speedometer, tachometer and gauges, with simulated car data) on its cluster display. On by default; it turns on the instrument cluster too.
+- **Fit this screen (portrait)**: CarPlay upright on the whole screen of an Android phone.
+- **Now Playing card**: drag it anywhere on the screen.
+- **Test build**: it stops working 90 days after it was built (2027-01-19). Newer builds will be posted here.
+
 ## Android 0.3.17 — October 2026
 
 [Download the APK](https://github.com/rPlayAI/carcast-public/releases/tag/android-0.3.17).

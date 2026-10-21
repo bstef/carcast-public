@@ -79,6 +79,13 @@ A car often has more than one screen. CarCast gives the phone the **main CarPlay
 - **Cluster content:** a map, the navigation turn card, or an app view, with ETA on or off.
 - **Configurable cluster size**, shown in its own window or panel.
 
+### CarPlay Ultra
+
+With an iPhone that supports **CarPlay Ultra**, the iPhone sends its gauge-cluster theme to the car, and the car draws the speedometer, tachometer and other gauges itself, around the phone's map.
+
+- **CarCast draws the Ultra cluster** on Android with simulated car data (speed, rpm, fuel, range), next to the main CarPlay screen.
+- **On by default** on Android: turn it off in Settings › Display › CarPlay Ultra.
+
 ### iAP2 media track info (Now Playing)
 
 CarCast subscribes to the iPhone's **Now Playing updates over iAP2**, as a car with a cluster or a driver display does.
@@ -155,7 +162,7 @@ Download and run the self-contained installer **`CarCast-Setup-1.0.0-x64.exe`** 
 
 ## Android
 
-**Download:** [CarCast for Android 0.3.17](https://github.com/rPlayAI/carcast-public/releases/tag/android-0.3.17) (APK; test build, stops working after 90 days, on 2027-01-19).
+**Download:** [CarCast for Android 0.3.23](https://github.com/rPlayAI/carcast-public/releases/tag/android-0.3.23) (APK; test build, stops working after 90 days, on 2027-01-19).
 
 ![CarPlay on an Android tablet](screenshots/android-carplay-home.png)
 

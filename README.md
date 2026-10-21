@@ -6,7 +6,7 @@
 
 CarCast turns a Windows PC, a Mac, an iPad, an iPhone, an Android tablet or an Android head unit into a CarPlay head unit. Connect an iPhone and CarPlay runs on the car's screen, on your desktop or on a tablet.
 
-CarCast is built on an existing code base that has **shipped in millions of wireless CarPlay boxes and dongles**. On that foundation it is a **state-of-the-art CarPlay receiver** that already supports CarPlay's newest features: video playback in the car, multiple displays with an instrument cluster, and iAP2 Now Playing. Its roots are in **real head units**, so it's meant for real cars, not only developer desks.
+CarCast is built on an existing code base that has **shipped in millions of wireless CarPlay boxes and dongles**. On that foundation it is a **state-of-the-art CarPlay receiver** that already supports CarPlay's newest features: video playback in the car, multiple displays with an instrument cluster, the CarPlay Ultra cluster, and iAP2 Now Playing. Its roots are in **real head units**, so it's meant for real cars, not only developer desks.
 
 - **Android head units and car owners:** a complete phone-connectivity system on the car's screen.
 - **CarPlay box and head-unit makers:** OEM licenses (see [OEM licensing](#oem-licensing)).
@@ -16,6 +16,16 @@ CarCast is built on an existing code base that has **shipped in millions of wire
 [Release notes](docs/releases.md)
 
 This repository is for **releases, documentation and issues**. The source code is not public.
+
+## Contents
+
+- [Platforms](#platforms) · [Demo](#demo)
+- [Highlights](#highlights): [Video in the car](#carplay-video-playback-video-in-the-car) · [Multiple displays](#multiple-displays) · [CarPlay Ultra](#carplay-ultra) · [Now Playing](#iap2-media-track-info-now-playing)
+- [macOS](#macos): [Protocol Inspector](#protocol-inspector) · [The app](#the-app)
+- [Windows](#windows): [The app](#the-app-1) · [Installation](#windows-installation)
+- [Android](#android): [Home](#home) · [Settings](#settings) · [Features](#features)
+- [iOS and iPadOS](#ios-and-ipados): [Settings](#settings-1) · [Features](#features-1) · [Wi-Fi and networks](#wi-fi-and-networks) · [Installing](#installing)
+- [Who it's for](#who-its-for) · [OEM licensing](#oem-licensing) · [Status](#status) · [Reporting a problem](#reporting-a-problem) · [Feedback](#feedback)
 
 ## Platforms
 

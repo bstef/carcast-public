@@ -1,5 +1,12 @@
 # Release notes
 
+## Android 0.3.25 — October 2026
+
+[Download the APK](https://github.com/rPlayAI/carcast-public/releases/tag/android-0.3.25).
+
+- **Video fix for more tablets**: fixes a black CarPlay screen on some tablets (seen on a Samsung Galaxy Tab with Android 14). The video decoder now has room for a whole key frame, retries its setup if the tablet refuses a setting, and shows each frame as soon as it's decoded.
+- **Test build**: it stops working 90 days after it was built (2027-01-19). Newer builds will be posted here.
+
 ## Android 0.3.24 — October 2026
 
 [Download the APK](https://github.com/rPlayAI/carcast-public/releases/tag/android-0.3.24).

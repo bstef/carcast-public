@@ -155,6 +155,8 @@ Download and run the self-contained installer **`CarCast-Setup-1.0.0-x64.exe`** 
 
 ## Android
 
+**Download:** [CarCast for Android 0.3.17](https://github.com/rPlayAI/carcast-public/releases/tag/android-0.3.17) (APK; test build, stops working after 90 days, on 2027-01-19).
+
 ![CarPlay on an Android tablet](screenshots/android-carplay-home.png)
 
 *CarPlay on a Pixel Tablet, with the vehicle showing a custom OEM icon (LEXUS).*
@@ -189,6 +191,8 @@ Each mode has its own tab: **CarPlay**, **Mirroring**, **AirPlay** and **DLNA**.
 - **Several phones.** Pair more than one iPhone and switch between them from the home screen.
 - **A step-by-step setup wizard.**
 - **Car profiles.** Choose the display preset, the OEM icon and label, and the instrument cluster layout (map, app or turn card, with one or two cluster displays).
+- **Built-in car logos.** More than 110 car brands (plus bicycle and motorcycle), the same set as iCarCast, or your own image.
+- **Driving position and night mode.** Left- or right-hand drive (CarPlay puts its dock on the driver's side), and a dark CarPlay.
 - **Return to Car.** The car icon in CarPlay switches to the native screen, and one tap takes you back to CarPlay.
 - **More than CarPlay.**
   - **Mirroring:** shows the iPhone screen, with Bluetooth control of the phone.
@@ -196,7 +200,7 @@ Each mode has its own tab: **CarPlay**, **Mirroring**, **AirPlay** and **DLNA**.
   - **DLNA renderer.**
 - **Share logs.** Send a session log after a failed connect.
 
-Requirements: an Android tablet or phone running Android 8.0 or later, and an iPhone with CarPlay enabled.
+Requirements: an Android tablet, phone or head unit running Android 5.0 or later (wireless setup with the device's own hotspot needs 8.0), and an iPhone with CarPlay enabled.
 
 ## iOS and iPadOS
 

@@ -1,5 +1,15 @@
 # Release notes
 
+## Android 0.3.17 — October 2026
+
+[Download the APK](https://github.com/rPlayAI/carcast-public/releases/tag/android-0.3.17).
+
+- **Built-in car logos**: the same 114 logos as iCarCast (car brands, bicycle and motorcycle), in Settings › Car › Built-in logos. Your own image still works.
+- **Driving position**: left- or right-hand drive; CarPlay puts its dock on the driver's side.
+- **Night mode**: a dark CarPlay; it also switches a session that's already running.
+- **Smaller and faster to install**: the APK is optimized, and installs in seconds on a head unit.
+- **Test build**: it stops working 90 days after it was built (2027-01-19). Newer builds will be posted here.
+
 ## iOS and iPadOS 1.0 — October 2026
 
 First release for iPhone and iPad (iOS/iPadOS 15 or later), as an IPA for sideloading.

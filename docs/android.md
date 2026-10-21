@@ -4,9 +4,9 @@
 
 **Download:** [CarCast for Android 0.3.23](https://github.com/rPlayAI/carcast-public/releases/tag/android-0.3.23) (APK; test build, stops working after 90 days, on 2027-01-19).
 
-![CarPlay on an Android tablet](../screenshots/android-carplay-home.png)
+![CarPlay with the CarPlay Ultra cluster on an Android tablet](../screenshots/android-carplay-ultra.png)
 
-*CarPlay on a Pixel Tablet, with the vehicle showing a custom OEM icon (LEXUS).*
+*CarPlay on a Pixel Tablet, with the CarPlay Ultra instrument cluster (speedometer and tachometer) drawn by CarCast below the main screen, and the Now Playing card.*
 
 ## Home
 

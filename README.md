@@ -21,10 +21,8 @@ This repository is for **releases, documentation and issues**. The source code i
 
 - [Platforms](#platforms) · [Demo](#demo)
 - [Highlights](#highlights): [Video in the car](#carplay-video-playback-video-in-the-car) · [Multiple displays](#multiple-displays) · [CarPlay Ultra](#carplay-ultra) · [Now Playing](#iap2-media-track-info-now-playing)
-- [macOS](#macos): [Protocol Inspector](#protocol-inspector) · [The app](#the-app)
-- [Windows](#windows): [The app](#the-app-1) · [Installation](#windows-installation)
-- [Android](#android): [Home](#home) · [Settings](#settings) · [Features](#features)
-- [iOS and iPadOS](#ios-and-ipados): [Settings](#settings-1) · [Features](#features-1) · [Wi-Fi and networks](#wi-fi-and-networks) · [Installing](#installing)
+- [macOS](#macos) ([guide](docs/macos.md)) · [Windows](#windows) ([guide](docs/windows.md))
+- [Android](#android) ([guide](docs/android.md)) · [iOS and iPadOS](#ios-and-ipados) ([guide](docs/ios.md))
 - [Who it's for](#who-its-for) · [OEM licensing](#oem-licensing) · [Status](#status) · [Reporting a problem](#reporting-a-problem) · [Feedback](#feedback)
 
 ## Platforms
@@ -109,42 +107,7 @@ CarCast subscribes to the iPhone's **Now Playing updates over iAP2**, as a car w
 
 *CarPlay from an iPhone 12 on **iOS 27.2** in a CarCast window on macOS. rPlayFling and rPlayTV are third-party CarPlay apps shown alongside the built-in ones; the side bar has the Home, Back and knob controls, plus screenshot and recording buttons.*
 
-- **Wired CarPlay over USB.** Connect an iPhone with a cable and CarPlay starts in a window.
-- **Configurable vehicle.**
-  - Screen size, resolution and display presets.
-  - Car name and OEM icon.
-  - Touch, knob or touchpad input.
-- **Instrument cluster.** A second display for the cluster stream (maps and turn-by-turn cards).
-- **Audio.** Media, navigation prompts, Siri and phone calls.
-- **Video in the car.** Video from supported apps plays on the CarPlay screen.
-- **Protocol inspector.** Logs the phone ↔ head-unit conversation in readable form (iAP2 messages, AirPlay control requests, stream setup). The usual question this answers is why a phone or app behaves differently in the car.
-
-### Protocol Inspector
-
-![CarCast Protocol Inspector](screenshots/macos-protocol-inspector.png)
-
-*Every message in the session, decoded: the iAP2 control messages (identification, authentication, vehicle status, Now Playing) and the AirPlay HTTP/RTSP requests and responses. You can filter by channel, search, and view the parsed fields and raw bytes of each message.*
-
-### The app
-
-| Home | CarPlay |
-|---|---|
-| ![Home](screenshots/macos-app-home.png) | ![CarPlay settings](screenshots/macos-app-carplay.png) |
-| **Control** | **Knob** |
-| ![Control](screenshots/macos-app-control.png) | ![Knob](screenshots/macos-app-knob.png) |
-
-- **Home:** starts and stops the receiver.
-- **CarPlay:** sets up the head unit that CarCast presents to the phone.
-  - Display preset.
-  - Video in the car.
-  - Instrument cluster.
-  - Knob or touch-only input.
-  - Now Playing.
-  - Car logo.
-- **Control:** sets how the Mac's mouse and keyboard drive the iPhone (relative mouse, absolute mouse or touch).
-- **Knob:** an on-screen rotary controller for head units without a touchscreen, also usable from the keyboard.
-
-Requirements: a Mac with Apple silicon or Intel, an iPhone with CarPlay enabled, and a USB cable.
+**[macOS guide](docs/macos.md)**: everything about CarCast on macOS, with screenshots.
 
 ## Windows
 
@@ -152,23 +115,7 @@ Requirements: a Mac with Apple silicon or Intel, an iPhone with CarPlay enabled,
 
 *CarPlay from an iPhone 12 on **iOS 27.2**, running live on Windows 11 with CarCast. The dedicated CarPlay screen features a top-aligned companion toolbar with Home, Back, knob rotary controls, and screenshot/recording actions.*
 
-### The app
-
-| Desktop Overview | CarPlay Display | Main Control |
-|---|---|---|
-| ![Desktop](screenshots/windows-desktop-carplay.png) | ![CarPlay](screenshots/windows-carplay-home.png) | ![Control](screenshots/windows-app-home.png) |
-
-- **Wired CarPlay over USB CDC-NCM:** Connect an iPhone via USB cable and CarPlay starts automatically in a native window with low latency.
-- **Top-Aligned Companion Toolbar:** Floating, rounded pill matching the macOS layout with fast access to Home, Back, Rotary knob controls, and screenshot tools.
-- **CarPlay Video Playback:** Multi-threaded FFmpeg engine with H.264 video decoding, NV12 rendering, and resampled 48kHz audio.
-- **Instrument Cluster Display:** Dedicated cluster display window support for turn-by-turn navigation cards and maps.
-- **Protocol & Session Inspector:** Real-time diagnostics for iAP2 packets, RTSP exchanges, and AirPlay stream telemetry.
-
-Requirements: a PC running Windows 11 or Windows 10 (64-bit), an iPhone with CarPlay enabled, and a USB cable.
-
-### Windows Installation
-
-Download and run the self-contained installer **`CarCast-Setup-1.0.0-x64.exe`** (available under Releases). The setup wizard bundles all required runtime libraries (FFmpeg codecs, SDL2 audio/video, libimobiledevice, Apple Bonjour) and automatically configures the necessary USB filter drivers with desktop and Start Menu shortcuts.
+**[Windows guide](docs/windows.md)**: everything about CarCast on Windows, with screenshots.
 
 ## Android
 
@@ -178,96 +125,13 @@ Download and run the self-contained installer **`CarCast-Setup-1.0.0-x64.exe`** 
 
 *CarPlay on a Pixel Tablet, with the vehicle showing a custom OEM icon (LEXUS).*
 
-### Home
-
-Each mode has its own tab: **CarPlay**, **Mirroring**, **AirPlay** and **DLNA**.
-
-| CarPlay | Mirroring |
-|---|---|
-| ![CarPlay tab](screenshots/android-home-carplay.png) | ![Mirroring tab](screenshots/android-home-mirroring.png) |
-| **AirPlay** | **DLNA** |
-| ![AirPlay tab](screenshots/android-home-airplay.png) | ![DLNA tab](screenshots/android-home-dlna.png) |
-
-### Settings
-
-| Settings | Set up CarPlay (wizard) |
-|---|---|
-| ![Settings](screenshots/android-settings.png) | ![Setup wizard](screenshots/android-setup-wizard.png) |
-| **Display:** resolution, video playback, instrument cluster size and content, two cluster streams, Now Playing card, knob input | **Wireless:** how the iPhone joins Wi-Fi after Bluetooth (this device's network, a private hotspot, a mobile hotspot or Wi-Fi Direct at 5 GHz) |
-| ![Display settings](screenshots/android-settings-display.png) | ![Wireless settings](screenshots/android-settings-wireless.png) |
-| **Car:** the car name and logo the iPhone shows in CarPlay | **Phones:** paired iPhones, pairing and discoverability |
-| ![Car settings](screenshots/android-settings-car.png) | ![Phones](screenshots/android-settings-phones.png) |
-| **AirPlay:** receiver name, mirroring resolution, password, full screen, start at boot | **DLNA:** receiver name, UPnP AV version |
-| ![AirPlay settings](screenshots/android-settings-airplay.png) | ![DLNA settings](screenshots/android-settings-dlna.png) |
-| **General:** which modes are enabled | |
-| ![General settings](screenshots/android-settings-general.png) | |
-
-### Features
-
-- **Wired and wireless CarPlay.** Connect over USB, or pair over Bluetooth and hand off to Wi-Fi.
-- **Several phones.** Pair more than one iPhone and switch between them from the home screen.
-- **A step-by-step setup wizard.**
-- **Car profiles.** Choose the display preset, the OEM icon and label, and the instrument cluster layout (map, app or turn card, with one or two cluster displays).
-- **Built-in car logos.** More than 110 car brands (plus bicycle and motorcycle), the same set as iCarCast, or your own image.
-- **Driving position and night mode.** Left- or right-hand drive (CarPlay puts its dock on the driver's side), and a dark CarPlay.
-- **Return to Car.** The car icon in CarPlay switches to the native screen, and one tap takes you back to CarPlay.
-- **More than CarPlay.**
-  - **Mirroring:** shows the iPhone screen, with Bluetooth control of the phone.
-  - **AirPlay receiver.**
-  - **DLNA renderer.**
-- **Share logs.** Send a session log after a failed connect.
-
-Requirements: an Android tablet, phone or head unit running Android 5.0 or later (wireless setup with the device's own hotspot needs 8.0), and an iPhone with CarPlay enabled.
+**[Android guide](docs/android.md)**: everything about CarCast on Android, with screenshots.
 
 ## iOS and iPadOS
 
 CarCast runs on an iPad or an iPhone as a wireless CarPlay screen (**iCarCast** on TestFlight). See the **[iCarCast user guide](docs/icarcast-user-guide.md)**.
 
-| Home | This iPhone | Portrait |
-|---|---|---|
-| ![CarCast home screen on iPhone](screenshots/iphone-home.png) | ![CarPlay on the same iPhone](screenshots/iphone-this-iphone-carplay.png) | ![CarPlay upright on an iPhone 18 Pro](screenshots/iphone-portrait-carplay.png) |
-
-*Left: CarCast on an iPhone 12, waiting for a phone, with **Settings**, **Connect** and **This iPhone**. Middle: **This iPhone**, CarPlay running full screen on the same iPhone, with the car's LEXUS icon. Right: **Portrait**, CarPlay upright on an iPhone 18 Pro, filling the screen like a tall car display, clear of the Dynamic Island.*
-
-| Device | What it does |
-|---|---|
-| **iPad** | **CarPlay receiver.** The iPad becomes the car's screen for an iPhone on the same Wi-Fi or on the iPhone's Personal Hotspot. |
-| **iPhone** | **CarPlay receiver**, like the iPad. |
-| | **This iPhone:** CarPlay on the same iPhone, full screen, with no second device. |
-| | **Connect:** finds the CarCast screens on this Wi-Fi (for example an iPad running CarCast) and starts CarPlay from this iPhone on the one you pick. |
-| **iPad or iPhone** | **Android Auto (experimental):** the same screen shows Android Auto from an Android phone. Off by default: Settings › Modes. |
-
-### Settings
-
-| Car | Display | Instrument cluster |
-|---|---|---|
-| ![Car settings](screenshots/iphone-settings-car.png) | ![Display settings](screenshots/iphone-settings-display.png) | ![Instrument cluster settings](screenshots/iphone-settings-cluster.png) |
-
-- **Car:** the name the iPhone shows for this car, its logo on the CarPlay home screen (100+ car brands, a bicycle, a motorcycle, or your own image) with its label, and the driving position.
-- **Wi-Fi for CarPlay:** the network This iPhone and Connect give CarPlay, with the password hidden behind a show toggle, *Use current Wi-Fi* and *Forget this network*.
-- **Display:** resolution (or *Fit this screen*), video playback while parked, *Show touches* for screen recordings, *Portrait* (CarPlay upright, like a tall car screen), *Avoid notch*, *Night mode* and *Play sound here* (off: the iPhone keeps CarPlay's sound, for the car's Bluetooth audio).
-- **Instrument cluster:** a second CarPlay screen for maps and turn-by-turn directions, with its content, ETA and size.
-
-### Features
-
-- **Back to CarPlay.** Tapping the car logo in CarPlay shows CarCast's own screen; one tap returns to CarPlay.
-- **Android Auto.** Turn it on in Settings › Modes and an **Android Auto** button appears. Install the [CarCast Launcher](https://github.com/rPlayAI/carcast-public/releases/tag/android-launcher-2026-10-19) on the Android phone (it starts Android Auto's head unit server and announces the phone), put both on the same Wi-Fi (or the iPad on the phone's hotspot) and tap the button: CarCast finds the phone and Android Auto runs on the iPad with touch and sound, no USB or Bluetooth. CarPlay and Android Auto can both stay on, or either one alone. See [Android Auto](docs/icarcast-user-guide.md#android-auto).
-- **Each device is its own car.** It's named `CarCast-XXXX` and keeps that identity across reinstalls, so the iPhone asks to allow it once.
-
-Requirements: iOS or iPadOS 15 or later (tested down to iPadOS 16 on an iPad Pro 9.7"), Wi-Fi or Personal Hotspot, and an iPhone with CarPlay enabled.
-
-### Wi-Fi and networks
-
-Which network setup works depends on where you are: at home, both devices on the same Wi-Fi; in the car, the iPhone's
-**Personal Hotspot**, with Wi-Fi switched on. Read the **[Wi-Fi and network guide](docs/ios-network-guide.md)** before
-the first drive; it covers This iPhone, an iPad as the screen, Connect, and what to do when CarPlay doesn't start.
-
-### Installing
-
-- **TestFlight (recommended):** iCarCast is in public beta on TestFlight: open [https://testflight.apple.com/join/mgpX2urq](https://testflight.apple.com/join/mgpX2urq) on the iPhone or iPad and install it from the TestFlight app.
-- **Sideload:** download the `.ipa` from [Releases](https://github.com/rPlayAI/carcast-public/releases) when one is posted and sideload it with AltStore, SideStore or Sideloadly, which sign it with your own Apple ID. With a free Apple ID the app must be re-signed every 7 days.
-
-On first launch, allow **Local Network**, **Bluetooth** and **Location** (iOS only shows apps the Wi-Fi network name when location is allowed).
+**[iPhone and iPad guide](docs/ios.md)**: everything about CarCast on iOS and iPadOS, with screenshots.
 
 ## Who it's for
 

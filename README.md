@@ -119,7 +119,7 @@ CarCast subscribes to the iPhone's **Now Playing updates over iAP2**, as a car w
 
 ## Android
 
-**Download:** [CarCast for Android 0.3.23](https://github.com/rPlayAI/carcast-public/releases/tag/android-0.3.23) (APK; test build, stops working after 90 days, on 2027-01-19).
+**Download:** [CarCast for Android 0.3.24](https://github.com/rPlayAI/carcast-public/releases/tag/android-0.3.24) (APK; test build, stops working after 90 days, on 2027-01-19).
 
 ![CarPlay with the CarPlay Ultra cluster on an Android tablet](screenshots/android-carplay-ultra.png)
 
